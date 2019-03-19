@@ -3,7 +3,7 @@
 
 	<groupId>de.uni-heidelberg.ziti.sus</groupId>
 	<artifactId>VersionComparator</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.1</version>
 	<packaging>jar</packaging>
 
 	<name>VersionComparator</name>
@@ -149,7 +149,7 @@
 		<connection>scm:git:git://github.com/sus-ziti-uni-hd/VersionComparator.git</connection>
 		<developerConnection>scm:git:ssh://github.com:sus-ziti-uni-hd/VersionComparator.git</developerConnection>
 		<url>https://github.com/sus-ziti-uni-hd/VersionComparator/tree/master</url>
-	  <tag>HEAD</tag>
+	  <tag>VersionComparator-1.1</tag>
   </scm>
 
 	<distributionManagement>
