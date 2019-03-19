@@ -9,8 +9,8 @@ public class Comparator {
 	 * 
 	 * @param version1 The first version to compare.
 	 * @param version2 The second version to compare.
-	 * @return -1 if version1 < version2, +1 if version1 > version2, 0 if version1
-	 *         == version2.
+	 * @return -1 if version1 &lt; version2, +1 if version1 &gt; version2, 0 if
+	 *         version1 == version2.
 	 */
 	public static int compareSimpleVersions(final String version1, String version2) {
 		Pattern versionPattern = Pattern.compile("[0-9]+(\\.[0-9]+)*");
@@ -62,8 +62,8 @@ public class Comparator {
 	 * 
 	 * @param version1 The first version to compare.
 	 * @param version2 The second version to compare.
-	 * @return -1 if version1 < version2, +1 if version1 > version2, 0 if version1
-	 *         == version2.
+	 * @return -1 if version1 &lt; version2, +1 if version1 &gt; version2, 0 if
+	 *         version1 == version2.
 	 */
 	public static int compareVersions(final String version1, final String version2) {
 		// split into individual parts separated by ".".
