@@ -117,6 +117,13 @@ public class Comparator {
 				} else if (!rem1.isEmpty() && rem2.isEmpty()) {
 					return +1;
 				} else if (!rem1.isEmpty() && !rem2.isEmpty()) {
+					// if both versions have suffixes, the longer suffix denotes a higher version.
+					if (rem1.length() > rem2.length()) {
+						return +1;
+					} else if (rem1.length() < rem2.length()) {
+						return -1;
+					}
+					// both lengths are equal. Perform a comparison.
 					// scale to +1/-1
 					int result = rem1.compareTo(rem2);
 					return result / Math.abs(result);

@@ -34,10 +34,14 @@ public class ComparatorTest {
 		assertTrue(Comparator.compareVersions("2.0.0", "2.0") == 0);
 
 		assertTrue(Comparator.compareVersions("1a", "1") == +1);
-		assertTrue(Comparator.compareVersions("1a", "1b") == -1);		
-		assertTrue(Comparator.compareVersions("2", "2c") == -1);		
-		assertTrue(Comparator.compareVersions("10", "2c") == +1);		
-		
-		assertTrue(Comparator.compareVersions("0.96", "1.0-pre") == -1);		
+		assertTrue(Comparator.compareVersions("1a", "1b") == -1);
+		assertTrue(Comparator.compareVersions("2", "2c") == -1);
+		assertTrue(Comparator.compareVersions("10", "2c") == +1);
+
+		assertTrue(Comparator.compareVersions("0.96", "1.0-pre") == -1);
+
+		assertTrue(Comparator.compareVersions("0.1aa", "0.1b") == +1);
+		assertTrue(Comparator.compareVersions("0.1ba", "0.1bb") == -1);
+		assertTrue(Comparator.compareVersions("0.1c", "0.1bb") == -1);
 	}
 }
